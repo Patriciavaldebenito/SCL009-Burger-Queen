@@ -1,4 +1,4 @@
-# Burger Queen
+# Burger Queen por Pati, Joce y Gelen.
 
 ## Preámbulo
 
