@@ -13,6 +13,7 @@ import { LunchComponent } from './components/lunch/lunch.component';
 import { AggregatesComponent } from './components/aggregates/aggregates.component';
 import { OrderComponent } from './components/order/order.component';
 import { ClientComponent } from './components/client/client.component';
+import { SendService } from './services/send.service';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,9 @@ import { ClientComponent } from './components/client/client.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    SendService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
