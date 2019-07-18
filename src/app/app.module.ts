@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { WaiterComponent } from './components/waiter/waiter.component';
-import { ChefComponent } from './components/chef/chef.component';
 import { HeaderComponent } from './components/header/header.component';
 import { KitchenComponent } from './components/kitchen/kitchen.component';
 import { MainComponent } from './components/main/main.component';
@@ -20,7 +19,6 @@ import { ClientComponent } from './components/client/client.component';
     AppComponent,
     WelcomeComponent,
     WaiterComponent,
-    ChefComponent,
     HeaderComponent,
     KitchenComponent,
     MainComponent,
