@@ -12,13 +12,14 @@ const routes: Routes = [
   { path: 'kitchen', component: KitchenComponent },
   { path: 'breakfast', component: BreakfastComponent },
   { path: 'lunch', component: LunchComponent },
+  { path: 'welcome', component: WelcomeComponent },
   { path: '', component: WelcomeComponent }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(
     routes,
-    {enableTracing:false}
+    { enableTracing:false }
     )
   ],
   exports: [RouterModule]
