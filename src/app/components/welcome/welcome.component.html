@@ -1,6 +1,18 @@
 <h1>Bienvenido a Burger Queen!</h1>
 <p>logo</p>
 <p>Selecciona tu usuario:</p>
-<button routerLink='/waiter'>Mesero</button>
+
+<!-- <button routerLink='/waiter'>Mesero</button>
 <br>
-<button routerLink='/kitchen'>Cocina</button>
+<button routerLink='/kitchen'>Cocina</button> -->
+
+
+<nav>
+
+  <div class="nav nav-tabs" id="nav-tab" role="tablist" routerLinkActive="active">
+    <a class="btn btn-success nav-link" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true" [routerLink]="['/waiter']">mesero</a>
+    <a class="btn btn-success nav-link" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true" [routerLink]="['/kitchen']">cocina</a>
+  </div>
+
+</nav>
+

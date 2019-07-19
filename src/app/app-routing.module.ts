@@ -8,12 +8,12 @@ import { LunchComponent } from './components/lunch/lunch.component';
 
 
 const routes: Routes = [
+  { path: 'welcome', component: WelcomeComponent },
+  { path: '', component: WelcomeComponent },
   { path: 'waiter', component: WaiterComponent },
   { path: 'kitchen', component: KitchenComponent },
   { path: 'breakfast', component: BreakfastComponent },
-  { path: 'lunch', component: LunchComponent },
-  { path: 'welcome', component: WelcomeComponent },
-  { path: '', component: WelcomeComponent }
+  { path: 'lunch', component: LunchComponent }
 ];
 
 @NgModule({
