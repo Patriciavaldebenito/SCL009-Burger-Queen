@@ -12,8 +12,7 @@ const routes: Routes = [
   { path: '', component: WelcomeComponent },
   { path: 'waiter', component: WaiterComponent },
   { path: 'kitchen', component: KitchenComponent },
-  { path: 'breakfast', component: BreakfastComponent },
-  { path: 'lunch', component: LunchComponent }
+
 ];
 
 @NgModule({

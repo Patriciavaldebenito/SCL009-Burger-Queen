@@ -20,7 +20,9 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from 'src/environments/environment';
 
+import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 
+  
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +42,9 @@ import { environment } from 'src/environments/environment';
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    FormsModule
+
   ],
   providers: [
     SendService

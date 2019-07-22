@@ -1,9 +1,44 @@
-<button routerLink='/breakfast'>Desayuno</button>
-<button routerLink='/lunch'>Almuerzo y/o Cena</button>
-<br>
+<div>
+    <h3>Eligue el menu:</h3>
+  
+    <nav  (click)="button = $event.target.value">
+        <button value="Desayuno" (click)="isBreakfastOrLunch(generalmenu)" >Desayuno</button>
+        <button value="Almuerzo y/o Cena" (click)="isBreakfastOrLunch(generalmenu)">Almuerzo y/o Cena</button>
+    </nav>
+   
+    <div [ngSwitch]="button">
+        <div *ngSwitchDefault>Debe escoger una opcion</div>
+
+        <div *ngSwitchCase="'Desayuno'">
+         Desayuno:
+
+         <div  >
+             <button *ngFor="let generalmenu  of generalmenu">{{generalmenu.name}}</button>
+
+
+         </div>
+
+        </div>
+    
+        <div *ngSwitchCase="'Almuerzo y/o Cena'">
+            aqui ira el menu almuerzo
+        </div>
+    </div>
+
+   
+  
+
+   
+</div>
+<!--
+<br/>
+<br/>
 <app-breakfast></app-breakfast>
 <app-lunch></app-lunch>
 <app-order></app-order>
-<br>
+<br/>
+<br/>
 <p>Extras</p>
+
 <app-aggregates></app-aggregates>
+-->
