@@ -2,27 +2,27 @@
     <h3>Eligue el menu:</h3>
   
     <nav  (click)="button = $event.target.value">
-        <button value="Desayuno" (click)="isBreakfastOrLunch(generalmenu)" >Desayuno</button>
-        <button value="Almuerzo y/o Cena" (click)="isBreakfastOrLunch(generalmenu)">Almuerzo y/o Cena</button>
+        <button value="Desayuno" >Desayuno</button>
+        <button value="Almuerzo y/o Cena" >Almuerzo y/o Cena</button>
     </nav>
    
     <div [ngSwitch]="button">
         <div *ngSwitchDefault>Debe escoger una opcion</div>
 
         <div *ngSwitchCase="'Desayuno'">
-         Desayuno:
 
-         <div  >
-             <button *ngFor="let generalmenu  of generalmenu">{{generalmenu.name}}</button>
-
-
-         </div>
+            <!-- debemos relacionar la variable desde padre
+                igualado a una variable en hijo
+            -->
+          <app-breakfast></app-breakfast>
 
         </div>
-    
+
         <div *ngSwitchCase="'Almuerzo y/o Cena'">
-            aqui ira el menu almuerzo
-        </div>
+            <app-lunch></app-lunch>
+          </div>
+    
+   
     </div>
 
    
@@ -30,6 +30,8 @@
 
    
 </div>
+
+<app-order></app-order>
 <!--
 <br/>
 <br/>

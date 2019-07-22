@@ -1,14 +1,3 @@
-<button id='/resSimpleHamburger'>Hamburgesa Res\/n\ Simple</button>
-<button id='/resDoubleHamburger'>Hamburgesa Res -- Doble</button>
-<button id='/chickenSimpleHamburger'>Hamburgesa Pollo -- Simple</button>
-<button id='/chickenDoubleHamburger'>Hamburgesa Pollo -- Doble</button>
-<button id='/vegSimpleHamburger'>Hamburgesa Vegetariana -- Simple</button>
-<button id='/vegDoubleHamburger'>Hamburgesa Vegetariana -- Doble</button>
-<p>Bebidas</p>
-<button id='/smallSoda'>Gaseosa 500ml</button>
-<button id='/bigSoda'>Gaseosa 750ml</button>
-<button id='/smallWater'>Agua 500ml</button>
-<button id='/bigWater'>Agua 750ml</button>
-<p>Acompañamientos</p>
-<button id='/frenchFries'>Papas Fritas</button>
-<button id='/onionRings'>Aros de Cebolla</button>
+<div>
+    <button *ngFor="let menuLunch  of menuLunch" value="menuBreakfast.nameSp">{{menuLunch.nameSp}}</button>
+</div>

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ClassMenu } from 'src/app/classMenu';
-import { GeneralMenu } from 'src/app/generalMenu';
+//import { ClassMenu } from 'src/app/classMenu';
+import { MenuBreakfast, MenuLunch } from 'src/app/generalMenu';
 
 
 
@@ -12,8 +12,9 @@ import { GeneralMenu } from 'src/app/generalMenu';
 export class MainComponent implements OnInit {
   // DECLARACION de variables 
   button: string
-  generalmenu = GeneralMenu;
-  filterMenu = [];
+  menuBreakfast = MenuBreakfast;
+  menuLunch = MenuLunch;
+  //filterMenu = [];
 
   
 
@@ -22,19 +23,15 @@ export class MainComponent implements OnInit {
   ngOnInit() {
   }
 
-  isBreakfastOrLunch(generalmenu){
-     
-     if(generalmenu.type === 'breakfast')  {
-      this.filterMenu.push(generalmenu) 
-       
-     } 
-     else if (generalmenu.type === 'lunch')  {
-
-     } 
 
 
-
-
-  }
+  s
+  //isBreakfastOrLunch(generalmenu){
+    // if(generalmenu.type === 'breakfast'){
+      //this.filterMenu.push(generalmenu.name)
+     //} 
+     //else if (generalmenu.type === 'lunch')  {
+     //} 
+  //}
 
 }
