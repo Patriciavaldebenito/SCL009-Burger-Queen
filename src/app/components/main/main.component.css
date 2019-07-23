@@ -1,0 +1,12 @@
+.component-main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 10px auto;
+    display:grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:repeat(1,auto);
+    background: #F4D03F;  
+    color: #000;
+  
+}

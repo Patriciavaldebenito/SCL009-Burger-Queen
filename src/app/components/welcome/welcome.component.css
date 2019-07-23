@@ -1,0 +1,51 @@
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    display:grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows:repeat(6,auto);
+    background: #F5B041;  
+
+
+}
+
+.container .div {
+    background: red;
+}
+.container > div,
+.container .title,
+.container img,
+.container nav {
+  /* background: #F7C77B;*/
+ background: #ffffff;
+ padding: 20px;
+ border-radius: 10px;
+}
+
+.title{
+    text-align: center;
+}
+
+img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+}
+
+
+.container nav {
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:repeat(2,auto);
+   color: #B72802;  
+   font-size: 1.5em;
+
+}
+
+.button-welcome{
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

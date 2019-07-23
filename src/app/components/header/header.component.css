@@ -1,0 +1,26 @@
+.component-header {
+    width: 90%;
+    max-width: 1200px;
+    margin: 10px auto;
+    display:grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:repeat(1,auto);
+    background: #FF5722;   
+    color: antiquewhite;
+  
+
+}
+
+ img{
+ border: 2px solid #D7DBDD;  
+  margin: 5px;
+  width: 80px;
+  height: 80px;
+ position: relative;
+ left: 50%;
+}
+
+/* ---------------------------------------*/
+
+

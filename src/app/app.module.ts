@@ -14,13 +14,16 @@ import { LunchComponent } from './components/lunch/lunch.component';
 import { AggregatesComponent } from './components/aggregates/aggregates.component';
 import { OrderComponent } from './components/order/order.component';
 import { ClientComponent } from './components/client/client.component';
+//servicios
+
 import { SendService } from './services/send.service';
 
-import { AngularFireModule } from '@angular/fire';
+//import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { environment } from 'src/environments/environment';
+//import { environment } from 'src/environments/environment';
 
-import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
+import { FormsModule } from '@angular/forms';
+import { BtnMainBreakfastOrLunchComponent } from './components/main/btn-main-breakfast-or-lunch/btn-main-breakfast-or-lunch.component'; // <-- NgModel lives here
 
   
 @NgModule({
@@ -36,12 +39,13 @@ import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
     AggregatesComponent,
     OrderComponent,
     ClientComponent,
+    BtnMainBreakfastOrLunchComponent,
   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp(environment.firebase),
+   // AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     FormsModule
 

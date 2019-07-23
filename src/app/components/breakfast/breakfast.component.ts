@@ -8,11 +8,14 @@ import { MenuBreakfast } from 'src/app/generalMenu';
 })
 export class BreakfastComponent implements OnInit {
   menuBreakfast = MenuBreakfast;
- 
+  
 
   constructor() { }
 
   ngOnInit() {
   }
+
+
+
 
 }
