@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { WaiterComponent } from './components/waiter/waiter.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { KitchenComponent } from './components/kitchen/kitchen.component';
+
 const routes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
   { path: '', component: WelcomeComponent },
