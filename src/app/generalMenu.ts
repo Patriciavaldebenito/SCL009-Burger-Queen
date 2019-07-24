@@ -5,7 +5,6 @@ export const MenuBreakfast: ClassMenu[] = [
     { nameSp:"Café con leche" ,name: "coffeeMilk", type: "breakfast", value: 700 },
     { nameSp:"Sandwich", name: "sandwich", type: "breakfast", value: 1000 },
     { nameSp:"Jugo",name: "juice", type: "breakfast", value: 700 }
-
 ];
 
 export const MenuLunch: ClassMenu[] = [

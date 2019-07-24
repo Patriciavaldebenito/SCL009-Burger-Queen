@@ -4,7 +4,7 @@
     <div>
         <button *ngFor="let menuBreakfast  of menuBreakfast" 
                 value="{{menuBreakfast.nameSp}}" 
-                (click)="getProduct($event.target.value)">
+                (click)="getProduct($event.target.value,arr)">
                 {{menuBreakfast.nameSp}}
         </button>
 </div>

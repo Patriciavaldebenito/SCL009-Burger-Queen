@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ɵConsole } from '@angular/core';
 import { InformationOrderService } from 'src/app/services/information-order.service';
 @Component({
   selector: 'app-order',
@@ -15,10 +15,11 @@ export class OrderComponent implements OnInit {
   
   // subscribir al subject que expone el servicio inyectado
   ngOnInit() {
-   this.informationOrderService
-       .enviarMensajeObservable
-       .subscribe(
+   this.informationOrderService.enviarMensajeObservable.subscribe(
         productSeletedInBreakfast => this.productSeletedInBreakfast = productSeletedInBreakfast);
   }
  
+
+
+
 }

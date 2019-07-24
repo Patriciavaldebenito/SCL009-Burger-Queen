@@ -6,9 +6,17 @@ export class SaleTemplate {
   total:any;
 }
 //detalle por producto
+// ****
 export class productDetail extends SaleTemplate {
    setProducts : {
        product:string;
        value_product:number;
    }
 }
+
+export class datosCompra {
+  name:string;
+  value: number;
+}
+
+export const Momentanea: datosCompra[] = [];
