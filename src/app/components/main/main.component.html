@@ -1,39 +1,65 @@
+<!-- I = A+B  div(I) -> div(A + B)  
+  /div(A)= { H3, NAV(2 btn breakfast y lunch),div[ngSwitch con dos casos=> breakfast y lunch] }   -->
 <div class="component-main  row">
 
+    <!--   div pata titulo,nav y div[ngSwitch] con dos casos desayuno o almuerzo -->
     <div class="col-12">
+
+            <!--   titulo   -->
             <h3>Eligue el menu:</h3>
   
-            <nav  (click)="button = $event.target.value">
-                <app-btn-main-breakfast-or-lunch></app-btn-main-breakfast-or-lunch>
-              
+            <!--  nav con dos botones   -->
+            <nav  (click)="button = $event.target.value" (click)=" valueButtonBreakfastOrLunch(button)">
+               
+                    <div class="row">
+
+                            <div class="col-4">
+                                    <button class="btn btn-danger nav-link" value="Desayuno" >Desayuno</button>
+                            </div>
+
+                            <div class="col-1"></div>
+                            
+                            <div class="col-4">
+                                    <button class="btn btn-danger nav-link" value="Almuerzo y/o Cena" >Almuerzo y/o Cena</button>
+                            </div>
+
+                            <div class="col-1"></div>
+                            <div class="col-2"></div>
+                           
+                        </div>
             </nav>
            
+            <!--   aparece div con contenido dependiendo el boton al cual se le haya hecho click   -->
+            
             <div [ngSwitch]="button">
                 <div *ngSwitchDefault>Debe escoger una opcion</div>
         
                 <div *ngSwitchCase="'Desayuno'">
-                    <!-- debemos relacionar la variable desde padre
-                        igualado a una variable en hijo
-                    -->
+                    <!-- debemos relacionar la variable desde padre igualado a una variable en hijo -->
                   <app-breakfast></app-breakfast>
-        
                 </div>
         
                 <div *ngSwitchCase="'Almuerzo y/o Cena'">
                     <app-lunch></app-lunch>
-                  </div>
+                </div>
             
             </div>
-          
+
     </div>
 
+    <!--   div de order   -->
     <div class="col-12">
             <app-order></app-order>
     </div>
-  
-
-   
 </div>
+
+
+
+
+
+
+
+
 
 
 <!--

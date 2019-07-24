@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 //import { ClassMenu } from 'src/app/classMenu';
-import { MenuBreakfast, MenuLunch } from 'src/app/generalMenu';
 
 
 
@@ -12,20 +11,56 @@ import { MenuBreakfast, MenuLunch } from 'src/app/generalMenu';
 export class MainComponent implements OnInit {
   // DECLARACION de variables 
   button: string
-  menuBreakfast = MenuBreakfast;
-  menuLunch = MenuLunch;
-  //filterMenu = [];
-
   
-
+ 
+  
   constructor() { }
 
   ngOnInit() {
   }
 
 
+// funcion --> valueButtonBreakfastOrLunch(button:string)
+// toma el valor del boton 
+// *** se pretende que esta variable luego pueda servir 
 
-  s
+
+ valueButtonBreakfastOrLunch(button:string){
+   this.button = button;
+    console.log("el boton es:"  + button)
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   //isBreakfastOrLunch(generalmenu){
     // if(generalmenu.type === 'breakfast'){
       //this.filterMenu.push(generalmenu.name)
@@ -33,5 +68,4 @@ export class MainComponent implements OnInit {
      //else if (generalmenu.type === 'lunch')  {
      //} 
   //}
-
 }

@@ -16,14 +16,12 @@ import { OrderComponent } from './components/order/order.component';
 import { ClientComponent } from './components/client/client.component';
 //servicios
 
-import { SendService } from './services/send.service';
 
 //import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 //import { environment } from 'src/environments/environment';
 
 import { FormsModule } from '@angular/forms';
-import { BtnMainBreakfastOrLunchComponent } from './components/main/btn-main-breakfast-or-lunch/btn-main-breakfast-or-lunch.component'; // <-- NgModel lives here
 
   
 @NgModule({
@@ -39,7 +37,7 @@ import { BtnMainBreakfastOrLunchComponent } from './components/main/btn-main-bre
     AggregatesComponent,
     OrderComponent,
     ClientComponent,
-    BtnMainBreakfastOrLunchComponent,
+  
   
   ],
   imports: [
@@ -51,7 +49,7 @@ import { BtnMainBreakfastOrLunchComponent } from './components/main/btn-main-bre
 
   ],
   providers: [
-    SendService
+
   ],
   bootstrap: [AppComponent]
 })
