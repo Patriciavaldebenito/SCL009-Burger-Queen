@@ -23,9 +23,12 @@ export class MainComponent implements OnInit {
   ngOnInit() {
   }
 
+  //onSelect(
+
+  //
 
 
-  s
+  
   //isBreakfastOrLunch(generalmenu){
     // if(generalmenu.type === 'breakfast'){
       //this.filterMenu.push(generalmenu.name)

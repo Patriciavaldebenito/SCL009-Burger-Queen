@@ -1,4 +1,10 @@
 
+<!-- en este componente esta siendo importado el desayuno 
+    import { MenuBreakfast } from 'src/app/generalMenu';-->
     <div>
-        <button *ngFor="let menuBreakfast  of menuBreakfast"  >{{menuBreakfast.nameSp}}</button>
-    </div>
+        <button *ngFor="let menuBreakfast  of menuBreakfast" 
+                value="{{menuBreakfast.nameSp}}" 
+                (click)="getProduct($event.target.value)">
+                {{menuBreakfast.nameSp}}
+        </button>
+</div>
