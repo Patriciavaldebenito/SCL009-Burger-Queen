@@ -6,7 +6,7 @@
     grid-gap: 10px;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows:repeat(1,auto);
-    background: #F4D03F;  
+    background: #ffffff;
     color: #000;
   
 }

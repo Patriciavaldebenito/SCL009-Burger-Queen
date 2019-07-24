@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -16,7 +17,6 @@ import { OrderComponent } from './components/order/order.component';
 import { ClientComponent } from './components/client/client.component';
 //servicios
 
-import { SendService } from './services/send.service';
 
 //import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
@@ -47,11 +47,12 @@ import { BtnMainBreakfastOrLunchComponent } from './components/main/btn-main-bre
     AppRoutingModule,
    // AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
-    FormsModule
+    FormsModule,
+    NgbModule
 
   ],
   providers: [
-    SendService
+    
   ],
   bootstrap: [AppComponent]
 })
