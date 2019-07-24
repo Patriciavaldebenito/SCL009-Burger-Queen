@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -22,6 +23,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 //import { environment } from 'src/environments/environment';
 
 import { FormsModule } from '@angular/forms';
+import { BtnMainBreakfastOrLunchComponent } from './components/main/btn-main-breakfast-or-lunch/btn-main-breakfast-or-lunch.component'; // <-- NgModel lives here
 
   
 @NgModule({
@@ -37,7 +39,7 @@ import { FormsModule } from '@angular/forms';
     AggregatesComponent,
     OrderComponent,
     ClientComponent,
-  
+    BtnMainBreakfastOrLunchComponent,
   
   ],
   imports: [
@@ -45,11 +47,12 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
    // AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
-    FormsModule
+    FormsModule,
+    NgbModule
 
   ],
   providers: [
-
+    
   ],
   bootstrap: [AppComponent]
 })
