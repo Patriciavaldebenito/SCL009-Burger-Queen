@@ -19,8 +19,7 @@ export class BreakfastComponent implements OnInit {
   selectedClassMenu: ClassMenu;
   arr =[];
   // objeto desayuno 
-  productSeletedInBreakfast: string = '';
-  valueProductSeletedInBreakfast: number;
+
 
   //b.- inyeccion de dependencia - servicio 
 
@@ -32,7 +31,7 @@ export class BreakfastComponent implements OnInit {
     this.informationOrderService
       .sendProductObservable
       .subscribe(
-        productSeletedInBreakfast => this.productSeletedInBreakfast = productSeletedInBreakfast);
+        arr => this.arr = arr);
 
   
 
@@ -40,12 +39,7 @@ export class BreakfastComponent implements OnInit {
 
   /* 1. */
   /* HACER UNA FUNCION QUE ESCUCHE EL CLICK */
-  getProduct(productSeletedInBreakfast: string) {
 
-   
-
-    console.log("product : " + productSeletedInBreakfast)
-  }
 
   onSelect(selectedClassMenu): void {
     this.arr.push(selectedClassMenu)
@@ -53,6 +47,11 @@ export class BreakfastComponent implements OnInit {
     console.log(this.arr)
    
 
+  }
+
+  sendOrderToKitchen() {
+    this.informationOrderService.setOrder(this.arr)
+  
   }
 
 
