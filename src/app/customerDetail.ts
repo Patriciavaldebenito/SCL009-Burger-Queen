@@ -1,4 +1,4 @@
-import { SaleTemplate } from './saleTemplate';
+import { SaleTemplate } from '../app/orderOfEachClient';
 
 
 
