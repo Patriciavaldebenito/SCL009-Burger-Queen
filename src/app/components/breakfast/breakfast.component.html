@@ -3,8 +3,10 @@
     import { MenuBreakfast } from 'src/app/generalMenu';-->
     <div>
         <button *ngFor="let menuBreakfast  of menuBreakfast" 
-                value="{{menuBreakfast.nameSp}}" 
-                (click)="getProduct($event.target.value,arr)">
-                {{menuBreakfast.nameSp}}
+                value="({{menuBreakfast.nameSp}})" 
+                (click)="getProduct(menuBreakfast.nameSp)"
+                (click)="onSelect(menuBreakfast)"
+                >
+                {{menuBreakfast.nameSp}} <br/> {{menuBreakfast.value}}
         </button>
 </div>

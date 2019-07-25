@@ -14,9 +14,9 @@ export class productDetail extends SaleTemplate {
    }
 }
 
-export class datosCompra {
+export class UnitProduct {
   name:string;
   value: number;
 }
 
-export const Momentanea: datosCompra[] = [];
+

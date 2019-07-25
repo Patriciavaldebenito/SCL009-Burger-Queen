@@ -24,6 +24,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 import { FormsModule } from '@angular/forms';
 import { BtnMainBreakfastOrLunchComponent } from './components/main/btn-main-breakfast-or-lunch/btn-main-breakfast-or-lunch.component'; // <-- NgModel lives here
+import { InformationOrderService } from './services/information-order.service';
 
   
 @NgModule({
@@ -51,7 +52,7 @@ import { BtnMainBreakfastOrLunchComponent } from './components/main/btn-main-bre
     NgbModule
 
   ],
-  providers: [
+  providers: [InformationOrderService
     
   ],
   bootstrap: [AppComponent]

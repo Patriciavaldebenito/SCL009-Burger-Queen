@@ -15,7 +15,7 @@ export class OrderComponent implements OnInit {
   
   // subscribir al subject que expone el servicio inyectado
   ngOnInit() {
-   this.informationOrderService.enviarMensajeObservable.subscribe(
+   this.informationOrderService.sendProductObservable.subscribe(
         productSeletedInBreakfast => this.productSeletedInBreakfast = productSeletedInBreakfast);
   }
  
