@@ -2,6 +2,7 @@
 
 Somos **Burguer Queen**, una cadena de comida rápida 24hrs.
 
+![deploy](https://scl009-burger-queen.firebaseapp.com/ )
 
 ![hamburguesa](./src/assets/img/pedido.jpg )
 
@@ -114,7 +115,7 @@ La aplicación debe:
 ## Prototipo de Baja Fidelidad
 
 Comenzamos el proceso de creacion con el prototipo de Baja Fidelidad, una vez creado continuamos con el prototipo de Alta Fidelidad
-[aquí](https://www.figma.com/file/HreAvVeIflB7h0MxSSCwPjsq/Prototipo-baja-fidelidad?node-id=0%3A1)
+[aquí](https://www.figma.com/proto/frmwsN9RDBE9lzyiNFV0J7/Prototipo-Alta-Fielidad?node-id=1%3A16&scaling=scale-down)
 
 
 ## Planificación 

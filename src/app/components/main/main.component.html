@@ -16,6 +16,7 @@
                                 <label for="name">Nombre cliente:</label>
                                 <input id="name" class="form-control" type="text" name="name" placeholder="Nombre cliente" />
                             </div>
+                            <button class="btn btn-secondary btn-sm  " [routerLink]="['/kitchen']">Listo</button>
                             </div>
                             <div *ngSwitchCase="'Almuerzo y/o Cena'">
                                 <app-lunch></app-lunch>
@@ -23,6 +24,7 @@
                                     <label for="name">Nombre cliente:</label>
                                     <input id="name" class="form-control" type="text" name="name" placeholder="Nombre cliente" />
                                 </div>
+                                <button class="btn btn-secondary btn-sm  " [routerLink]="['/kitchen']">Listo</button>
                               </div>
                         </div>
                 </div>
