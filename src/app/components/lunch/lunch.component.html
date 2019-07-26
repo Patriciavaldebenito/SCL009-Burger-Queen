@@ -1,12 +1,10 @@
-<<<<<<< HEAD
-<!-- en este componente esta siendo importado el almuerzo
-    import { MenuLunch } from 'src/app/generalMenu';-->
 <div>
-        <button *ngFor="let menuLunch  of menuLunch" value="menuBreakfast.nameSp">{{menuLunch.nameSp}}</button>
+    <button *ngFor="let menuLunch  of menuLunch" 
+             value="menuLunch.nameSp"
+             (click)="onSelect(menuLunch)"
+             class="btn btn-secondary btn-sm">
+             {{menuLunch.nameSp}} <br/> {{menuLunch.value}}
+             
+            </button>
 </div>
-   
-=======
-<div>
-    <button *ngFor="let menuLunch  of menuLunch" value="menuBreakfast.nameSp">{{menuLunch.nameSp}}</button>
-</div>
->>>>>>> 8e2f209a98f6e09fc83944c9362a3a39159ea80a
+

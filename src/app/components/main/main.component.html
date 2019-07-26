@@ -1,50 +1,37 @@
-<div class="component-main  row">
-
-    <div class="col-12">
-            <h3>Eligue el menu:</h3>
-  
-            <nav  (click)="button = $event.target.value">
-                <app-btn-main-breakfast-or-lunch></app-btn-main-breakfast-or-lunch>
-              
-            </nav>
-           
-            <div [ngSwitch]="button">
-                <div *ngSwitchDefault>Debe escoger una opcion</div>
-        
-                <div *ngSwitchCase="'Desayuno'">
-                    <!-- debemos relacionar la variable desde padre
-                        igualado a una variable en hijo
-                    -->
-                  <app-breakfast></app-breakfast>
-        
+<div class="container">
+        <div class="row">
+                <div class="col-12 col-lg-6">
+                        <h3>Elige el menú:</h3>
+                        <nav  (click)="button = $event.target.value">
+                            <app-btn-main-breakfast-or-lunch></app-btn-main-breakfast-or-lunch>
+                        </nav>
+                        <div [ngSwitch]="button">
+                            <div *ngSwitchDefault></div>
+                            <div *ngSwitchCase="'Desayuno'">
+                                <!-- debemos relacionar la variable desde padre
+                                    igualado a una variable en hijo
+                                -->
+                              <app-breakfast></app-breakfast>
+                              <div class="form-group">
+                                <label for="name">Nombre cliente:</label>
+                                <input id="name" class="form-control" type="text" name="name" placeholder="Nombre cliente" />
+                            </div>
+                            </div>
+                            <div *ngSwitchCase="'Almuerzo y/o Cena'">
+                                <app-lunch></app-lunch>
+                                <div class="form-group">
+                                    <label for="name">Nombre cliente:</label>
+                                    <input id="name" class="form-control" type="text" name="name" placeholder="Nombre cliente" />
+                                </div>
+                              </div>
+                        </div>
                 </div>
-        
-                <div *ngSwitchCase="'Almuerzo y/o Cena'">
-                    <app-lunch></app-lunch>
-                  </div>
-            
+                <div class="col-12 col-lg-6">
+                        <app-order></app-order>
+                </div>
             </div>
-          
-    </div>
-
-    <div class="col-12">
-            <app-order></app-order>
-    </div>
-  
-
-   
-</div>
+ </div>
 
 
-<!--
-<br/>
-<br/>
-<app-breakfast></app-breakfast>
-<app-lunch></app-lunch>
-<app-order></app-order>
-<br/>
-<br/>
-<p>Extras</p>
 
-<app-aggregates></app-aggregates>
--->
+

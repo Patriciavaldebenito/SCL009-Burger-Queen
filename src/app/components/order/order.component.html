@@ -1,21 +1,34 @@
+
+
+<div class="component-order card">
+  <p     ><strong>Total : </strong>                     $  {{ elementValueAc}}</p>
+</div>
+
 <div class="component-order card">
   <table class="table">
     <thead>
       <tr>
-        <th scope="col">#</th>
-        <th scope="col">Producto</th>
+        <th scope="col"></th>
         <th scope="col">Cantidad</th>
+        <th scope="col">Producto</th>
         <th scope="col">Precio</th>
       </tr>
     </thead>
-    
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>{{productSeletedInBreakfast}}</td>
+   <tbody>
+      <tr  *ngFor="let arr  of arr">
+
+        <th scope="row"></th>
         <td>1</td>
-        <td>1</td>
+        <td>{{arr.nameSp}}</td>
+        <td>{{arr.value}}</td>
+
       </tr>
     </tbody>
   </table>
+
+  
 </div>
+
+<!--   boton momentaneo   -->
+<button (click)= "clickSendToKitchen()">Listo</button>
+

@@ -1,26 +1,31 @@
+
+
 <div class="container">
-  <br />
-
-  <h1 class="title">Bienvenido a Burger Queen!</h1>
-
-  <img src="../../../assets/img/burger-queen.png" alt="logo burgen queen" width="300" height="280">
-  
-  <nav>
-    <p>Selecciona tu usuario:</p>
-
-    <div class="nav row" id="nav-tab" role="tablist" routerLinkActive="active">
-      <div class="button-welcome col-6">
-          <a class="btn btn-danger nav-link" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
-          aria-controls="nav-home" aria-selected="true" [routerLink]="['/waiter']">mesero</a>
+    <div class="row">
+      <div class="col-12">
+        <h1 class="title">Bienvenido a Burger Queen!</h1>
       </div>
-
-      <div class="button-welcome col-6">
-          <a class="btn btn-danger nav-link" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
-          aria-controls="nav-home" aria-selected="true" [routerLink]="['/kitchen']">cocina</a>
-      </div>
-  
     </div>
-  </nav>
-
-
-</div>
+    <div class="row">
+      <div class="col-12">
+          <img src="../../../assets/img/burger-queen.png" alt="logo burgen queen" width="300" height="280">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+          <div class="row">
+            <div class="col-12">
+                <p>Selecciona tu usuario:</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-12">
+                <a class="btn btn-danger btn-block" data-toggle="tab" href="#waiter" [routerLink]="['/waiter']">Mesero</a>
+            </div>
+            <div class="col-sm-6 col-12">
+                <a class="btn btn-danger btn-block" data-toggle="tab" href="#kitchen" [routerLink]="['/kitchen']">Cocina</a>
+            </div>
+          </div>
+      </div>
+    </div>
+   </div>
