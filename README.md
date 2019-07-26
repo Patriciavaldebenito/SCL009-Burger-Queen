@@ -2,7 +2,7 @@
 
 Somos **Burguer Queen**, una cadena de comida rápida 24hrs.
 
-![deploy](https://scl009-burger-queen.firebaseapp.com/ )
+[deploy](https://scl009-burger-queen.firebaseapp.com/ )
 
 ![hamburguesa](./src/assets/img/pedido.jpg )
 
