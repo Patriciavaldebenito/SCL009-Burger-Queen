@@ -1,37 +1,41 @@
 <div class="container">
-        <div class="row">
-                <div class="col-12 col-lg-6">
-                        <h3>Elige el menú:</h3>
-                        <nav  (click)="button = $event.target.value">
-                            <app-btn-main-breakfast-or-lunch></app-btn-main-breakfast-or-lunch>
-                        </nav>
-                        <div [ngSwitch]="button">
-                            <div *ngSwitchDefault></div>
-                            <div *ngSwitchCase="'Desayuno'">
-                                <!-- debemos relacionar la variable desde padre
-                                    igualado a una variable en hijo
-                                -->
-                              <app-breakfast></app-breakfast>
-                              <div class="form-group">
-                                <label for="name">Nombre cliente:</label>
-                                <input id="name" class="form-control" type="text" name="name" placeholder="Nombre cliente" />
-                            </div>
-                            <button class="btn btn-secondary btn-sm  " [routerLink]="['/kitchen']">Listo</button>
-                            </div>
-                            <div *ngSwitchCase="'Almuerzo y/o Cena'">
-                                <app-lunch></app-lunch>
-                                <div class="form-group">
-                                    <label for="name">Nombre cliente:</label>
-                                    <input id="name" class="form-control" type="text" name="name" placeholder="Nombre cliente" />
-                                </div>
-                                <button class="btn btn-secondary btn-sm  " [routerLink]="['/kitchen']">Listo</button>
-                              </div>
-                        </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                        <app-order></app-order>
-                </div>
+  <div class="row">
+
+
+    <!-- col izquierda -->
+    <div class="col-12 col-lg-6">
+        <h3>Elige el menú:</h3>
+        <nav  (click)="button = $event.target.value">
+              <!-- btones desayuno y almuerzo -->
+           <div class="row">
+              <div class="col-12 col-sm-6">
+                <button class="btn btn-danger btn-block" value="Desayuno" >Desayuno</button>
+              </div>
+              <div class="col-12 col-sm-6">
+                <button class="btn btn-danger btn-block" value="Almuerzo y/o Cena" >Almuerzo y/o Cena</button>
+              </div>
+           </div>
+        </nav>
+        <!------------------------------------------>
+        <div [ngSwitch]="button">
+       
+            <div *ngSwitchDefault></div>
+            <div *ngSwitchCase="'Desayuno'">                  
+              <app-breakfast></app-breakfast>         
             </div>
+
+            <div *ngSwitchCase="'Almuerzo y/o Cena'">
+              <app-lunch></app-lunch>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- col izquierda -->
+    <div class="col-12 col-lg-6">
+        <app-order></app-order>
+    </div>
+  </div>
  </div>
 
 

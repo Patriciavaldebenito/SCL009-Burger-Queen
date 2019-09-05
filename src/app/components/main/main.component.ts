@@ -11,8 +11,6 @@ import { MenuBreakfast, MenuLunch } from 'src/app/generalMenu';
 })
 export class MainComponent implements OnInit {
   // DECLARACION de variables 
-  
-
   button: string
   menuBreakfast = MenuBreakfast;
   menuLunch = MenuLunch;
@@ -22,21 +20,9 @@ export class MainComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() {  
   }
 
-  //onSelect(
 
-  //
-
-
-  
-  //isBreakfastOrLunch(generalmenu){
-    // if(generalmenu.type === 'breakfast'){
-      //this.filterMenu.push(generalmenu.name)
-     //} 
-     //else if (generalmenu.type === 'lunch')  {
-     //} 
-  //}
 
 }

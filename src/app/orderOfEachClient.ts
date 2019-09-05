@@ -5,10 +5,12 @@ export class SaleTemplate {
   nameCliente: any;
   total:any;
 }
+
+
 //detalle por producto
 // ****
 export class productDetail extends SaleTemplate {
-   setProducts : {
+       setProducts : {
        product:string;
        value_product:number;
    }
