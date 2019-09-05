@@ -12,50 +12,44 @@ import { TemplateClientComponent } from '../template-client/template-client.comp
 })
 export class OrderComponent implements OnInit {
   //a.- declaracion de variables 
+  arr = [];
+  elementValue = 0;
+  elementValueAc = 0;
 
-  arr=[];
-  elementValue=0;
-  elementValueAc=0;
-
-//  ************************************************************************
- //b.- inyeccion de dependencia - servicio 
- constructor(public informationOrderService: InformationOrderService, private modalService : NgbModal) { 
-   this.informationOrderService = informationOrderService;
- }
-
-//  ************************************************************************
- //c.- subscribir al subject que expone el servicio inyectado
- ngOnInit() { 
-   
-  this.informationOrderService.sendProductObservable.subscribe(
-     arr => { 
-                    this.arr = arr; 
-                    arr.forEach(element => {
-                             this.elementValue = element.value;
-                             return this.elementValue;
-                    });
-                    this.elementValueAc = this.elementValueAc +  this.elementValue;      
-                    return this.elementValueAc;
-    }
-  )}
-
-  clickSendToKitchen(){
-
-    console.log("btn enviando a cocina funcionando, se abre modal para solicitar nombre del cliente ")
-     const modal = this.modalService.open(TemplateClientComponent)
-     modal.result.then(
-       this.handleModalTemplateClientComponent.bind(this),
-       this.handleModalTemplateClientComponent.bind(this)
-     )
-    
+  //b.- inyeccion de dependencia - servicio 
+  constructor(public informationOrderService: InformationOrderService, private modalService: NgbModal) {
+    this.informationOrderService = informationOrderService;
   }
 
-
-
-
-  handleModalTemplateClientComponent(){
-    console.log("si leyebdo handleModalTemplateClientComponent");
+  //c.- subscribir al subject que expone el servicio inyectado
+  ngOnInit() {
+    this.informationOrderService.sendProductObservable.subscribe(
+      arr => {
+        this.arr = arr;
+        arr.forEach(element => {
+          this.elementValue = element.value;
+          return this.elementValue;
+        });
+        this.elementValueAc = this.elementValueAc + this.elementValue;
+        return this.elementValueAc;
+      }
+    )
   }
+
+  clickSendToKitchen() {
+
+    const modal = this.modalService.open(TemplateClientComponent)
+    modal.result.then(
+      this.handleModalTemplateClientComponent.bind(this),
+      this.handleModalTemplateClientComponent.bind(this)
+    )
+
+  }
+
+  handleModalTemplateClientComponent() {
+    console.log("handleModalTemplateClientComponent");
+  }
+
 }
 
 
