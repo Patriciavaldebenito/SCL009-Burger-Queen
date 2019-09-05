@@ -37,13 +37,11 @@ export class OrderComponent implements OnInit {
   }
 
   clickSendToKitchen() {
-
     const modal = this.modalService.open(TemplateClientComponent)
     modal.result.then(
       this.handleModalTemplateClientComponent.bind(this),
       this.handleModalTemplateClientComponent.bind(this)
     )
-
   }
 
   handleModalTemplateClientComponent() {
