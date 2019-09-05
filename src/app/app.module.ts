@@ -24,7 +24,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 //import { environment } from 'src/environments/environment';
 
 import { FormsModule } from '@angular/forms';
-import { BtnMainBreakfastOrLunchComponent } from './components/main/btn-main-breakfast-or-lunch/btn-main-breakfast-or-lunch.component'; // <-- NgModel lives here
+
 import { InformationOrderService } from './services/information-order.service';
 import { TemplateClientComponent } from './components/template-client/template-client.component';
 
@@ -42,7 +42,7 @@ import { TemplateClientComponent } from './components/template-client/template-c
    
     OrderComponent,
     ClientComponent,
-    BtnMainBreakfastOrLunchComponent,
+ 
     TemplateClientComponent,
   
   ],

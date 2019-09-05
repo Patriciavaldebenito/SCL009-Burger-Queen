@@ -25,7 +25,7 @@ export class InformationOrderService {
 
   // b.- creacion de una function momentanea evaluacion 
   // observacion 
-  observeProduct(order:[]) {
+  observeProduct(order) {
     this.order = order;
     this.sendProductSubject.next(order);
   console.log("dentro del servicio , en enviarMensaje :" + JSON.stringify(order)); 

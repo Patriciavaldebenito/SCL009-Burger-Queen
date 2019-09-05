@@ -44,9 +44,7 @@ export class LunchComponent implements OnInit {
    console.log(" objeto por producto :" + JSON.stringify(selectedClassMenu))
    console.log(" brakfast  -push- dps de ser llenado :" + JSON.stringify(this.arr))
    
-   // ahora arr sera parametro de la funcion setOrder del InformationOrderServer importado en el constructor 
-   // e iniciado (ver ngOnInit ) del componente
-   //this.informationOrderService.setOrder(this.arr)
+
    this.informationOrderService.observeProduct(this.arr)
 
  }
