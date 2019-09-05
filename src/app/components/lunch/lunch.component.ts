@@ -14,18 +14,15 @@ export class LunchComponent implements OnInit {
   selectedClassMenu: ClassMenu[];
   arr : Array<any> = [];
 
-  //  ************************************************************************
   //b.- inyeccion de dependencia - servicio 
   constructor(public informationOrderService: InformationOrderService) {
     this.informationOrderService = informationOrderService;
   }
 
-  //  ************************************************************************
   //c.- subscribir al subject que expone el servicio inyectado
   ngOnInit() {
     this.informationOrderService.sendProductObservable.subscribe(arr => this.arr = arr);
   }
-  //                                                                        arr = order en el servicio
 
   /* ***   Evento   Click   ***/
   onSelect(selectedClassMenu): void {
@@ -34,19 +31,5 @@ export class LunchComponent implements OnInit {
 
   }
 
-
-
-
 }
 
-
-  /*   FUNCION SIN USO - USO  = VISUALIZACION DE VARIABLES EN CONSOLA DENTRO DE onSelect(///)
-a() {
-  // inicio/seguimiento   -     el array es vacio 
-  console.log(" brakfast  -- arr antes de ser llenado :" + this.arr)
-  console.log(this.arr)
-  // pero ahora se guardara el elemento / producto clickeado
-  // listo el producto esta en el array 
-  console.log(" objeto por producto :" + JSON.stringify(selectedClassMenu))
-  console.log(" brakfast  -push- dps de ser llenado :" + JSON.stringify(this.arr))
-}*/
