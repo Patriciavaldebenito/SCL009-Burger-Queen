@@ -2,9 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms'
-
 import { AppRoutingModule } from './app-routing.module';
-
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { WaiterComponent } from './components/waiter/waiter.component';
@@ -13,21 +11,15 @@ import { KitchenComponent } from './components/kitchen/kitchen.component';
 import { MainComponent } from './components/main/main.component';
 import { BreakfastComponent } from './components/breakfast/breakfast.component';
 import { LunchComponent } from './components/lunch/lunch.component';
-
 import { OrderComponent } from './components/order/order.component';
 import { ClientComponent } from './components/client/client.component';
 //servicios
-
-
 //import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 //import { environment } from 'src/environments/environment';
-
 import { FormsModule } from '@angular/forms';
-
 import { InformationOrderService } from './services/information-order.service';
 import { TemplateClientComponent } from './components/template-client/template-client.component';
-
   
 @NgModule({
   declarations: [
@@ -39,12 +31,9 @@ import { TemplateClientComponent } from './components/template-client/template-c
     MainComponent,
     BreakfastComponent,
     LunchComponent,
-   
     OrderComponent,
     ClientComponent,
- 
     TemplateClientComponent,
-  
   ],
   imports: [
     BrowserModule,
