@@ -1,24 +1,10 @@
-// Information-Order-Service --> manejara la información
-// ¿Qué información?  los productos seleccionados en pantalla por el mesero
-
-//  procedimiento: 
-// 1ero -- El producto seleccionado es : productSeletedInBreakfast:string 
-// 2do  -- El producto es almacenado en el array UnitSaleProductSet : UnitProduct[] = [];
-//         El array  UnitSaleProductSet es importado y ubicado en   src/app
-// 3ero -- El producto debe ser almacenado en un objeto cuyas propiedades son name y value 
-//         [{name:string,value:number},{name:string,value:number}....., {n,n}]
-
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
-
-
 
 @Injectable({
   providedIn: 'root'
 })
-
 export class InformationOrderService {
-
   // a- declaracion de variables 
 
  
