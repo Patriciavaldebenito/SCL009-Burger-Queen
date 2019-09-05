@@ -28,7 +28,6 @@ export class LunchComponent implements OnInit {
   onSelect(selectedClassMenu): void {
     this.arr.push(selectedClassMenu)
     this.informationOrderService.observeProduct(this.arr)
-
   }
 
 }
