@@ -11,8 +11,6 @@ import { MenuBreakfast, MenuLunch } from 'src/app/generalMenu';
 })
 export class MainComponent implements OnInit {
   // DECLARACION de variables 
-  button: string
-  
   menuBreakfast = MenuBreakfast;
   menuLunch = MenuLunch;
   //filterMenu = [];

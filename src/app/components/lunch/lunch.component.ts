@@ -12,8 +12,7 @@ export class LunchComponent implements OnInit {
   //a.- declaracion de variables 
   menuLunch = MenuLunch;
   selectedClassMenu: ClassMenu[];
-
-  arr = [];
+  arr : Array<any> = [];
 
   //  ************************************************************************
   //b.- inyeccion de dependencia - servicio 
