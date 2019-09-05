@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { InformationOrderService } from 'src/app/services/information-order.service';
-import { MenuBreakfast } from 'src/app/generalMenu';
-import { ClassMenu } from 'src/app/classMenu';
+//import { MenuBreakfast } from 'src/app/generalMenu';
+//import { ClassMenu } from 'src/app/classMenu';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { TemplateClientComponent } from '../template-client/template-client.component';
 
@@ -13,12 +13,9 @@ import { TemplateClientComponent } from '../template-client/template-client.comp
 export class OrderComponent implements OnInit {
   //a.- declaracion de variables 
 
-
   arr=[];
   elementValue=0;
   elementValueAc=0;
-
- 
 
 //  ************************************************************************
  //b.- inyeccion de dependencia - servicio 
@@ -33,21 +30,12 @@ export class OrderComponent implements OnInit {
   this.informationOrderService.sendProductObservable.subscribe(
      arr => { 
                     this.arr = arr; 
-                    console.log("en order arr :" + JSON.stringify(arr));
-                    console.log("valueelement :"+ this.elementValue)
-                    
                     arr.forEach(element => {
                              this.elementValue = element.value;
                              return this.elementValue;
-                      
-                        
                     });
-
-                    console.log(("valueelement2 :"+ this.elementValue));
-                    this.elementValueAc = this.elementValueAc +  this.elementValue;
-                    console.log(("value element  ACumulado :"+ this.elementValueAc))
+                    this.elementValueAc = this.elementValueAc +  this.elementValue;      
                     return this.elementValueAc;
-
     }
   )}
 

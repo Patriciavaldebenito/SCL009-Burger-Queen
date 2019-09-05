@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: 'waiter', component: WaiterComponent },
   { path: 'kitchen', component: KitchenComponent },
 ];
+
 @NgModule({
   imports: [RouterModule.forRoot(
     routes,
