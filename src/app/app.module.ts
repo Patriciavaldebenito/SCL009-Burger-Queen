@@ -9,9 +9,6 @@ import { WaiterComponent } from './components/waiter/waiter.component';
 import { HeaderComponent } from './components/header/header.component';
 import { KitchenComponent } from './components/kitchen/kitchen.component';
 import { MainComponent } from './components/main/main.component';
-import { BreakfastComponent } from './components/breakfast/breakfast.component';
-import { LunchComponent } from './components/lunch/lunch.component';
-import { OrderComponent } from './components/order/order.component';
 import { ClientComponent } from './components/client/client.component';
 //servicios
 //import { AngularFireModule } from '@angular/fire';
@@ -29,9 +26,6 @@ import { TemplateClientComponent } from './components/template-client/template-c
     HeaderComponent,
     KitchenComponent,
     MainComponent,
-    BreakfastComponent,
-    LunchComponent,
-    OrderComponent,
     ClientComponent,
     TemplateClientComponent,
   ],

@@ -4,3 +4,13 @@ export class ClassMenu {
     type : string;
     value: number;
 }
+
+export interface Menu {
+    nameSp:string;
+    name : string;
+    type : string;
+    value: number;
+}
+
+
+

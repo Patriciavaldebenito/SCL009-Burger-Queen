@@ -6,20 +6,27 @@ import { Subject } from 'rxjs';
 })
 export class InformationOrderService {
   // a- declaracion de variables 
-  order = [];
-  orderObserver;
-
-
-  private sendProductSubject = new Subject<any>();
+  detailUnitProduct = new Array();
+  producto : string; 
+  //orderObserver;
+  private sendProductSubject = new Subject<[]>();
   sendProductObservable = this.sendProductSubject.asObservable();
 
   // b.- creacion de una function momentanea evaluacion 
-  // observacion 
-  observeProduct(order) {
-    this.order = order;
-    this.sendProductSubject.next(order);
-    console.log("dentro del servicio , en enviarMensaje :" + JSON.stringify(order));
-    this.orderObserver = order;
+  observeProduct = (detailBreakfast) => {
+
+    this.sendProductSubject.next(detailBreakfast);
+    console.log(detailBreakfast);
+    console.log(detailBreakfast.length);// cantidad de productos 
+
+
+     detailBreakfast.forEach(element => {
+       this.detailUnitProduct.push(element.name)
+       console.log(this.detailUnitProduct)
+     });
   }
+
+
+
 
 }
