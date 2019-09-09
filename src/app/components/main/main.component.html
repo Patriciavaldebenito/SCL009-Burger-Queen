@@ -52,4 +52,35 @@
 
   </div>
 
+
+  <div class="row">
+
+    <!-- col derecha -->
+
+    <div class="col-12 col-lg-6 component-order card">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Producto</th>
+            <th scope="col">Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let ArraySummary  of ArraySummary">
+
+            <th scope="row"></th>
+            <td>1</td>
+            <td>{{ArraySummary.producto}}</td>
+            <td>{{ArraySummary.valor}}</td>
+
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+
+  </div>
 </div>

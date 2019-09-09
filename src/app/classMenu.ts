@@ -14,3 +14,11 @@ export interface Menu {
 
 
 
+export class Summary {
+    coffee :number;
+    coffeeMilk:number;
+    sandwich:number;
+    juice:number; 
+}
+
+
